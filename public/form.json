@@ -1,0 +1,138 @@
+{
+  "data": [
+    {
+      "name": "name",
+      "value": "Diego Villa",
+      "placeholder": "Your name",
+      "type": "text",
+      "required": true,
+      "minLength": 10,
+      "maxLength": 30,
+      "pattern": "[a-zA-Z ]*",
+      "messagesError": [
+        {
+          "type": "required",
+          "message": "Name is required"
+        },
+        {
+          "type": "minlength",
+          "message": "Min = 10 characters"
+        },
+        {
+          "type": "maxlength",
+          "message": "Max = 30 characters"
+        },
+        {
+          "type": "pattern",
+          "message": "Name incorrect"
+        },
+        {
+          "type": "forbidden",
+          "message": "This word is forbidden"
+        }
+      ]
+    },
+    {
+      "name": "age",
+      "value": "29",
+      "placeholder": "Your age",
+      "type": "number",
+      "required": true,
+      "min": 18,
+      "max": 60,
+      "pattern": "[0-9]*",
+      "messagesError": [
+        {
+          "type": "required",
+          "message": "Age is required"
+        },
+        {
+          "type": "min",
+          "message": "Min = 18"
+        },
+        {
+          "type": "max",
+          "message": "Max = 60"
+        },
+        {
+          "type": "pattern",
+          "message": "Invalid age"
+        }
+      ]
+    },
+    {
+      "name": "weight",
+      "value": "70",
+      "placeholder": "Your Weight",
+      "type": "number",
+      "required": true,
+      "min": 5,
+      "max": 120,
+      "step": 0.1,
+      "pattern": "[0-9]+([,.][0-9]+)?",
+      "messagesError": [
+        {
+          "type": "required",
+          "message": "Weight is required"
+        },
+        {
+          "type": "min",
+          "message": "Min = 5"
+        },
+        {
+          "type": "max",
+          "message": "Max = 120"
+        },
+        {
+          "type": "pattern",
+          "message": "Invalid weight"
+        }
+      ]
+    },
+    {
+      "name": "email",
+      "value": "email@example.com",
+      "placeholder": "Your email address",
+      "type": "email",
+      "required": true,
+      "maxLength": 90,
+      "messagesError": [
+        {
+          "type": "required",
+          "message": "Email is required"
+        },
+        {
+          "type": "maxlength",
+          "message": "Max = 90"
+        },
+        {
+          "type": "email",
+          "message": "Email invalid"
+        }
+      ]
+    },
+    {
+      "name": "password",
+      "value": "12345678",
+      "placeholder": "Your password",
+      "type": "password",
+      "required": true,
+      "minLength": 8,
+      "maxLength": 20,
+      "messagesError": [
+        {
+          "type": "required",
+          "message": "Password is required"
+        },
+        {
+          "type": "minlength",
+          "message": "Min = 8"
+        },
+        {
+          "type": "maxlength",
+          "message": "Max = 20"
+        }
+      ]
+    }
+  ]
+}
